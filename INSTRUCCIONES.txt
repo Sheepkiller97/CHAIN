@@ -1,0 +1,50 @@
+CHAIN · CÓMO PUBLICARLA EN GITHUB (GRATIS)
+==========================================
+
+Necesitas una cuenta en github.com. Todo se hace desde el navegador, sin instalar nada.
+
+IMPORTANTE: dentro de este ZIP hay una carpeta. Descomprímelo y sube los ARCHIVOS que
+están dentro de la carpeta (index.html, app.js, etc.), no la carpeta en sí. Si subes la
+carpeta, la página no se encontrará.
+
+PASO 1 · Crear el repositorio
+  1. Entra a github.com e inicia sesión.
+  2. Toca el "+" de arriba a la derecha y elige "New repository".
+  3. Nombre: por ejemplo  chain
+  4. Déjalo en "Public".
+  5. Toca "Create repository".
+
+PASO 2 · Subir los archivos
+  1. En la página del repositorio vacío, toca el enlace "uploading an existing file".
+  2. Arrastra TODOS los archivos de la carpeta (los 11 archivos). Si estás en el
+     teléfono, usa "choose your files" y selecciónalos.
+  3. Espera a que terminen de cargar y toca "Commit changes".
+
+PASO 3 · Activar la página web
+  1. En el repositorio, toca "Settings" (Configuración).
+  2. En el menú de la izquierda elige "Pages".
+  3. En "Build and deployment" > "Source" elige "Deploy from a branch".
+  4. En "Branch" elige  main  y la carpeta  / (root). Toca "Save".
+  5. Espera 1 o 2 minutos y recarga la página de Settings > Pages. Arriba aparece tu
+     dirección:
+         https://TU-USUARIO.github.io/chain/
+
+PASO 4 · Instalarla en el iPhone
+  1. Abre esa dirección en Safari.
+  2. Toca el botón Compartir (cuadrado con flecha hacia arriba).
+  3. Elige "Añadir a pantalla de inicio" y toca "Añadir".
+  4. La primera vez abre la app con internet. Después funciona también sin conexión.
+
+PASO 5 · Comprobar que funciona
+  - Agrega "#test" al final de la dirección:  https://TU-USUARIO.github.io/chain/#test
+    Debe aparecer un panel con todas las pruebas en verde.
+  - Crea un hábito, cierra Safari, vuelve a abrir la dirección y comprueba que sigue ahí.
+
+PARA ACTUALIZAR LA APP MÁS ADELANTE
+  En el repositorio toca "Add file" > "Upload files", arrastra los archivos nuevos (con el
+  mismo nombre) y toca "Commit changes". En 1 o 2 minutos se actualiza sola.
+
+NOTAS
+  - Los datos de cada persona quedan en su propio navegador. Para pasarlos a otro
+    dispositivo usa Configuración > Exportar copia y luego Importar copia.
+  - Si tu curso pide otro nombre de repositorio o de carpeta, puedes cambiarlo sin problema.

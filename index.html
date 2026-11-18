@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#0B0A08">
+<meta name="description" content="CHAIN: tu cadena de constancia diaria. Hábitos, rachas, metas y progreso.">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="apple-mobile-web-app-title" content="CHAIN">
+<title>CHAIN · Constancia diaria</title>
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<script>
+/* Aplica el tema elegido antes del primer pintado (evita el parpadeo claro→oscuro). "Sistema" lo resuelve el CSS. */
+try{var _t=(JSON.parse(localStorage.getItem('chain.v1')||'{}').settings||{}).theme;if(_t==='light'||_t==='dark')document.documentElement.setAttribute('data-theme',_t)}catch(e){}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Manrope:wght@400;500;600;700;800&display=swap">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip" href="#view">Saltar al contenido</a>
+<noscript>CHAIN necesita JavaScript para funcionar.</noscript>
+<div id="glow" aria-hidden="true"></div>
+<div class="app">
+  <aside class="side">
+    <div class="brand"><span class="logo"><svg class="ic" viewBox="0 0 24 24"><rect x="2.5" y="8" width="11" height="8" rx="4"/><rect x="10.5" y="8" width="11" height="8" rx="4"/></svg></span><span>CHAIN</span></div>
+    <nav class="snav" id="nav-side" aria-label="Principal"></nav>
+    <div class="side-foot" id="side-foot"></div>
+  </aside>
+  <main>
+    <div id="banner"></div>
+    <div id="view" class="view" tabindex="-1"></div>
+  </main>
+</div>
+<nav class="tabbar" id="nav-tab" aria-label="Principal"></nav>
+<div class="ov" id="ov"><div class="sheet" id="sheet" role="dialog" aria-modal="true" aria-labelledby="sh-title"></div></div>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<canvas id="confetti" aria-hidden="true"></canvas>
+<script src="app.js" defer></script>
+</body>
+</html>
